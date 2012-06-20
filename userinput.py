@@ -15,40 +15,5 @@ print
 Year = raw_input('Year: (add an extra year if you are not born in january or february)  :')
 print
 
-
-const_A = Month
-const_B = Day
-
-if len(Year) == 4:
-    const_C = Year[2:]
-    const_D = Year[:2]
-
-if len(Year) == 3:
-    const_C = Year[2:]
-    const_D = Year[:1]
-
-if len(Year) <= 2:
-    const_C = Year
-    const_D = '0'
-
-#define constants to help compute the day of the week
-
-var_W = (13*int(const_A)-1)/5
-
-var_X = int(const_C)/4
-
-var_Y = int(const_D)/4
-
-var_Z = var_W + var_Y + int(const_B) + int(const_C)-2*int(const_D)
-
-var_R = var_Z%7
-while var_R < 0:
-     var_R = var_R + 7
-
-Days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'] # form a list of days
-
-birth_Day = Days[var_R]
-
-
-print "{0} {1} was born on {2}".format(user_First_Name,user_Last_Name,birth_Day)  #print user's data
+print "{0} {1} was born on {2} {3}, {4}".format(user_First_Name,user_Last_Name,Month,Day,Year)  #print user's data
 
