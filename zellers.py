@@ -12,7 +12,7 @@ Day = raw_input('Day?:')
 Month = raw_input('Month(from 1-12 where march = 1, april =2 and february = 12 in that order):  ')
 print
 
-Year = raw_input('Year: (add an extra year if you are not born in january or february)  :')
+Year = raw_input('Year: ( subtract a year if you are born in january or february)  :')
 print
 
 
@@ -39,7 +39,7 @@ var_X = int(const_C)/4
 
 var_Y = int(const_D)/4
 
-var_Z = var_W + var_Y + int(const_B) + int(const_C)-2*int(const_D)
+var_Z = var_W + var_X + var_Y + int(const_B) + int(const_C)-2*int(const_D)
 
 var_R = var_Z%7
 while var_R < 0:
